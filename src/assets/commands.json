@@ -1,0 +1,10 @@
+[
+  { "command": "afk", "description": "Sends player to AFK arena" },
+  { "command": "ah", "description": "Access Auction House," },
+  { "command": "api", "description": "Generates user an API key for usage with Donut SMP API"},
+  { "command": "auction", "description": "Access Auction House," },
+  { "command": "advent", "description": "Displays Advent Calendar (Holiday Only)" },
+  { "command": "bal", "description": "Displays Player's balance or balance of player argument if they have played the server" },
+  { "command": "baltop", "description": "Displays list of top players according to their balances along with rankings. Displays player’s own ranking at the bottom" }
+
+]
