@@ -1,2 +1,3 @@
-# Donut-SMP-Commands
-Simple website describing donut smp commands to each user
+# Donut SMP Commands Webiste
+
+Simple site for viewing commands for Donut SMP 
