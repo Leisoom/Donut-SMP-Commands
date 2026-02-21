@@ -1,7 +1,7 @@
- import type { CommandExample } from "./commandExample"
+import type { CommandExample } from './commandExample'
 
- export interface Command {
-    command: string
-    description: string
-    examples: CommandExample[]
-  }
+export interface Command {
+  command: string
+  description: string
+  examples: CommandExample[]
+}

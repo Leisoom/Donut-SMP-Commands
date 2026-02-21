@@ -1,4 +1,4 @@
-export interface CommandExample{
-    argument: string,
-    description: string
+export interface CommandExample {
+  argument: string
+  description: string
 }

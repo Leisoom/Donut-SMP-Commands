@@ -1,52 +1,114 @@
 [
-  { "command": "afk", "description": "Sends player to AFK arena", 
+  { "command": "afk", "description": "Sends player to AFK area", 
   "examples": [
-    {"argument": "", "description": "brings up afk teleportation menu"},
-    {"argument": "40", "description": "teleport's player to afk arena 40"}
+    {"argument": "", "description": "Displays afk teleportation menu, allowing player to teleport to any open afk area"},
+    {"argument": "40", "description": "Teleports player to afk area 40"}
   ] },
-  { "command": "ah", "description": "Access Auction House" },
+  { "command": "ah", "description": "Access Auction House. See Auction Guide for more information on searching specific items", 
+  "examples": [
+    {"argument": "", "description": "Displays Auction House without any filters"},
+    {"argument": "glass", "description": "Displays all items that match search term \"glass\""},
+    {"argument": "DrDonutt", "description": "Displays all items put on the Auction House by user \"DrDonutt\""}
+  ] },
   { "command": "api", "description": "Generates player an API key for usage with Donut SMP API"},
-  { "command": "auction", "description": "Access Auction House" },
+  { "command": "auction", "description": "Access Auction House. See Auction Guide for more information on searching specific items", 
+  "examples": [
+    {"argument": "", "description": "Displays Auction House without any filters"},
+    {"argument": "glass", "description": "Displays all items that match search term \"glass\""},
+    {"argument": "DrDonutt", "description": "Displays all items put on the Auction House by user \"DrDonutt\""}
+  ] },
   { "command": "advent", "description": "Displays Advent Calendar (Holiday Only)" },
-  { "command": "bal", "description": "Displays Player's balance or player balance according to argument provided" },
+  { "command": "bal", "description": "Displays Player's balance or player balance according to argument provided", 
+  "examples": [
+    {"argument": "", "description": "Displays players own balance"},
+    {"argument": "DrDonutt", "description": "Displays balance of user \"DrDonutt\""}
+  ] },
   { "command": "baltop", "description": "Displays list of top players according to their balances along with rankings. Displays player’s own ranking at the bottom" },
   { "command": "billford", "description": "Displays current Billford trade" },
-  { "command": "block", "description": "Block specific player according to argument provided" },
+  { "command": "block", "description": "Block specific player according to argument provided", 
+  "examples": [
+    {"argument": "DrDonutt", "description": "Blocks user \"DrDonutt\""}
+  ] },
   { "command": "bounty", "description": "Displays current bounty list sorted in descending order" },
   { "command": "buy", "description": "Displays Donut SMP store website link" },
-  { "command": "delhome", "description": "Delete's home according to argument provided" },
+  { "command": "delhome", "description": "Delete's home according to argument provided", 
+  "examples": [
+    {"argument": "base", "description": "Deletes home with name \"base\""},
+    {"argument": "1", "description": "Deletes home in position one"}
+  ] },
   { "command": "discord", "description": "Displays Donut SMP Discord Server link" },
-  { "command": "duel", "description": "Send's duel request to player according to argument provided" },
-  { "command": "findplayer", "description": "Locates the player’s current dimension or afk area. Displays only if player is online" },
+  { "command": "duel", "description": "Send's duel request to player according to argument provided", 
+  "examples": [
+    {"argument": "DrDonutt", "description": "Sends duel request to user \"DrDonutt\""}
+  ] },
+  { "command": "findplayer", "description": "Locates the player’s current dimension or afk area. Displays only if player is online. Possible results include: Overworld, Nether, The End, AFK Area" },
   { "command": "fly", "description": "Allow's player to fly within spawn lobbies (Donut+ Only)" },
-  { "command": "fp", "description": "Locates the player’s current dimension or afk area. Displays only if player is online" },
+  { "command": "fp", "description": "Locates the player’s current dimension or afk area. Displays only if player is online. Possible results include: Overworld, Nether, The End, AFK Area" },
   { "command": "help", "description": "Displays server information and guides" },
   { "command": "hide", "description": "Scambles username for other players (Donut+ Only)" },
-  { "command": "home", "description": "If no argument is present, displays list of player's home. If argument is present, teleports player to specified home" },
-  { "command": "homes", "description": "If no argument is present, displays list of player's home. If argument is present, teleports player to specified home" },
+  { "command": "home", "description": "If no argument is present, displays list of player's home. If argument is present, teleports player to specified home", 
+  "examples": [
+    {"argument": "", "description": "Displays list of player's homes"},
+    {"argument": "base", "description": "Teleports player to home with name \"base\""},
+    {"argument": "4", "description": "Teleports player to home in position four"}
+  ]  },
+  { "command": "homes", "description": "If no argument is present, displays list of player's home. If argument is present, teleports player to specified home", 
+  "examples": [
+    {"argument": "", "description": "Displays list of player's homes"},
+    {"argument": "base", "description": "Teleports player to home with name \"base\""},
+    {"argument": "4", "description": "Teleports player to home in position four"}
+  ] },
   { "command": "ignore", "description": "Ignore's player according to argument provided" },
   { "command": "medal", "description": "Displays Medal link quest. If the player has already completed, displays already completed message" },
   { "command": "media", "description": "Displays Media rank requirements" },
   { "command": "message", "description": "Message specific player" },
   { "command": "msg", "description": "Message specific player" },
-  { "command": "order", "description": "If no argument is present, displays list of orders. If argument is present, displays order's matching argument" },
-  { "command": "orders", "description": "If no argument is present, displays list of orders. If argument is present, displays order's matching argument" },
+  { "command": "order", "description": "If no argument is present, displays list of orders. If argument is present, displays order's matching argument", 
+  "examples": [
+    {"argument": "", "description": "Displays list of orders with no filter"},
+    {"argument": "glass", "description": "Displays orders that match the search term of \"glass\""},
+    {"argument": "W1zox_", "description": "Displays orders placed by the user \"W1zox_\""}
+  ] },
+  { "command": "orders", "description": "If no argument is present, displays list of orders. If argument is present, displays order's matching argument", 
+  "examples": [
+    {"argument": "", "description": "Displays list of orders with no filter"},
+    {"argument": "glass", "description": "Displays orders that match the search term of \"glass\""},
+    {"argument": "W1zox_", "description": "Displays orders placed by the user \"W1zox_\""}
+  ] },
   { "command": "pay", "description": "Pays specific player x amount of money" },
   { "command": "ping", "description": "Displays player's ping to themselves" },
   { "command": "reply", "description": "Replys to last message sent player from someone" },
   { "command": "report", "description": "Report specified player" },
-  { "command": "rtp", "description": "if no argument is present, displays random teleport menu. If argument is present, teleports player to given region or dimension" },
+  { "command": "rtp", "description": "if no argument is present, displays random teleport menu. If argument is present, teleports player to given region or dimension", 
+  "examples": [
+    {"argument": "", "description": "Displays random teleport menu"},
+    {"argument": "west", "description": "Teleports player to random position in region NA West"},
+    {"argument": "nether", "description": "Teleports player to random position in nether dimension"}
+  ] },
   { "command": "rules", "description": "Displays rules menu" },
   { "command": "sell", "description": "Displays sell menu" },
   { "command": "sellhistory", "description": "Displays player's sell history" },
   { "command": "sellmulti", "description": "Displays player's sell multipler for each category" },
-  { "command": "sethome", "description": "Set's player location as a home if possible" },
+  { "command": "sethome", "description": "Sets player location as a home if possible" },
   { "command": "settings", "description": "Displays settings menu" },
-  { "command": "shards", "description": "Displays player's shard amount" },
+  { "command": "shards", "description": "Displays player's shard amount", 
+  "examples": [
+    {"argument": "", "description": "Displays players own shards"},
+    {"argument": "DrDonutt", "description": "Displays shard balance of user \"DrDonutt\""}
+  ] },
+  { "command": "shardshop", "description": "Displays shard shop" },
   { "command": "shop", "description": "Displays shop menu" },
-  { "command": "spawn", "description": "If no argument is present, displays spawn teleport menu. If argument is present, teleports player to specified spawn number" },
+  { "command": "spawn", "description": "If no argument is present, displays spawn teleport menu. If argument is present, teleports player to specified spawn number", 
+  "examples": [
+    {"argument": "", "description": "Displays spawn menu"},
+    {"argument": "1", "description": "Teleports player to spawn one"}
+  ] },
   { "command": "spectate", "description": "Spectate's specifeid player's duel if they are current in one" },
-  { "command": "stats", "description": "If no argument is present, displays player's current states. If argument is present, displays specified player's stats" },
+  { "command": "stats", "description": "If no argument is present, displays player's current states. If argument is present, displays specified player's stats", 
+  "examples": [
+    {"argument": "", "description": "Displays own player stats"},
+    {"argument": "W1zox_", "description": "Displays stats of user \"W1zox_\""}
+  ] },
   { "command": "team", "description": "Displays team menu" },
   { "command": "teleport", "description": "Send's telport request to specified player" },
   { "command": "teleporthere", "description": "Send's telport here request to specified player" },
@@ -61,8 +123,8 @@
   { "command": "unignore", "description": "Unignores specified player" },
   { "command": "warp", "description": "Warps player to specified spawn desintation. Destinations include: crates, shop, auction, duels, worlds, afk" },
   { "command": "website", "description": "Displays Donut SMP Official Website link" },
-  { "command": "whereami", "description": "Displays leaderboard menu" },
-  { "command": "whisper", "description": "Wisphers's message to specified player" },
+  { "command": "whereami", "description": "Displays information for tickets" },
+  { "command": "whisper", "description": "Wisphers message to specified player" },
   { "command": "world", "description": "Teleports player back to their position in the dimension if they had any" },
   { "command": "worth", "description": "Displays worth of specified item according to the argument provided" }
 ]
