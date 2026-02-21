@@ -5,8 +5,7 @@
       <Command
         v-for="cmd in cmds"
         :key="cmd.command"
-        :command="cmd.command"
-        :description="cmd.description"
+        :command="cmd"
       />
     </div>
   </v-container>
@@ -15,13 +14,9 @@
 <script lang="ts" setup>
   import { computed } from 'vue'
   import rawCommands from '@/assets/commands.json'
+  import type { Command } from "@/types/command.ts"
 
-  interface CommandItem {
-    command: string
-    description: string
-  }
-
-  const commands = rawCommands as CommandItem[]
+  const commands = rawCommands as Command[]
 
   const groupedCommands = computed(() => {
     return commands.reduce((acc, cmd) => {
@@ -34,6 +29,6 @@
       acc[letter].push(cmd)
 
       return acc
-    }, {} as Record<string, CommandItem[]>)
+    }, {} as Record<string, Command[]>)
   })
 </script>

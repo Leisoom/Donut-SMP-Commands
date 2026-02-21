@@ -1,5 +1,9 @@
 [
-  { "command": "afk", "description": "Sends player to AFK arena" },
+  { "command": "afk", "description": "Sends player to AFK arena", 
+  "examples": [
+    {"argument": "", "description": "brings up afk teleportation menu"},
+    {"argument": "40", "description": "teleport's player to afk arena 40"}
+  ] },
   { "command": "ah", "description": "Access Auction House" },
   { "command": "api", "description": "Generates player an API key for usage with Donut SMP API"},
   { "command": "auction", "description": "Access Auction House" },
