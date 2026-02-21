@@ -16,15 +16,13 @@
           </span>
         </div>
         <v-expansion-panel-text v-if="hasExamples">
-          <v-list>
-            <v-list-item
-              v-for="exp in command.examples"
-              :key="exp.argument"
-              density="compact"
-            >
-              /{{ command.command }} {{ exp.argument }} - {{ exp.description }}
-            </v-list-item>
-          </v-list>
+          <v-list-item
+            v-for="exp in command.examples"
+            :key="exp.argument"
+            density="compact"
+          >
+            /{{ command.command }} {{ exp.argument }} - {{ exp.description }}
+          </v-list-item>
         </v-expansion-panel-text>
       </v-expansion-panel>
     </v-expansion-panels>
