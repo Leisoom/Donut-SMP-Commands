@@ -9,7 +9,7 @@
     {"argument": "", "description": "Displays Auction House without any filters"},
     {"argument": "glass", "description": "Displays all items that match search term \"glass\""},
     {"argument": "DrDonutt", "description": "Displays all items put on the Auction House by user \"DrDonutt\""},
-    {"argument": "sell 40k", "description": "Sell's item in player's hand for $40,000"}
+    {"argument": "sell 40k", "description": "Sells item in player's hand for $40,000"}
   ] },
   { "command": "api", "description": "Generates player an API key for usage with Donut SMP API"},
   { "command": "auction", "description": "Access Auction House. See Auction Guide for more information on searching specific items", 
