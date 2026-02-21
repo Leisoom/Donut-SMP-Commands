@@ -1,5 +1,5 @@
 <template>
-  <v-card class="my-3" density="compact" elevation="0">
+  <v-card class="my-2" density="compact" elevation="0">
     <v-expansion-panels flat>
       <v-expansion-panel elevation="0">
         <v-expansion-panel-title v-if="hasExamples" static>

@@ -119,7 +119,7 @@
   { "command": "tpa", "description": "Send's telport request to specified player" },
   { "command": "tpacancel", "description": "Cancel all current teleport requests" },
   { "command": "tpaccept", "description": "If no argument is present, accepts latest TPA or TPHere request sent to the player. If argument is present, accepts TPA or TPHere request from specfied player" },
-  { "command": "tpdeny", "description": "Cancel all current teleport requests" },
+  { "command": "tpdeny", "description": "Deny current incoming TP/TPHere request" },
   { "command": "tphere", "description": "Send's telport here request to specified player" },
   { "command": "unblock", "description": "Unblock specified player" },
   { "command": "unignore", "description": "Unignores specified player" },
