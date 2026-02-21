@@ -2,13 +2,13 @@
   <v-container>
     <v-navigation-drawer>
       <v-list>
-        <v-list-item v-for="cmd in rawCommands" :key="cmd.command" class="font-weight-bold text-secondary" :href="'#' + cmd.command">
+        <v-list-item class="font-weight-bold">Commands</v-list-item>
+        <v-list-item v-for="cmd in rawCommands" :key="cmd.command" density="compact" :href="'#' + cmd.command">
           {{ cmd.command }}
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <h1 class="text-secondary mb-4">Donut SMP Commands: </h1>
-    <div v-for="(cmds, letter) in groupedCommands" :key="letter">
+    <div v-for="(cmds, letter) in groupedCommands" :key="letter" class="mb-6">
       <h3>{{ letter.toUpperCase() }}</h3>
       <Command
         v-for="cmd in cmds"
