@@ -11,7 +11,7 @@
       <thead>
         <tr>
           <th style="width: 150px">
-            Shorthand
+            Argument
           </th>
           <th>
             Item(s)
@@ -21,9 +21,9 @@
       <tbody>
         <tr
           v-for="item in auctionCommands"
-          :key="item.shortHand"
+          :key="item.argument"
         >
-          <td>{{ item.shortHand }}</td>
+          <td>{{ item.argument }}</td>
           <td>{{ item.description }}</td>
         </tr>
       </tbody>
@@ -33,7 +33,7 @@
       <thead>
         <tr>
           <th style="width: 150px">
-            Shorthand
+            Argument
           </th>
           <th>
             Enchantment
@@ -43,9 +43,9 @@
       <tbody>
         <tr
           v-for="item in enchantmentCommands"
-          :key="item.shortHand"
+          :key="item.argument"
         >
-          <td>{{ item.shortHand }}</td>
+          <td>{{ item.argument }}</td>
           <td>{{ item.description }}</td>
         </tr>
       </tbody>
@@ -54,12 +54,12 @@
 </template>
 
 <script setup lang="ts">
-  import type { AuctionCommand } from '@/types/auctionCommand'
+  import type { CommandExample } from '@/types/commandExample'
   import auctionShorthand from '@/assets/auctionCommands.json'
   import enchantmentShorthand from '@/assets/enchantmentCommands.json'
 
-  const auctionCommands = auctionShorthand as AuctionCommand[]
-  const enchantmentCommands = enchantmentShorthand as AuctionCommand[]
+  const auctionCommands = auctionShorthand as CommandExample[]
+  const enchantmentCommands = enchantmentShorthand as CommandExample[]
 </script>
 
 <style lang="scss" scoped>
