@@ -2,8 +2,16 @@
   <v-container>
     <v-navigation-drawer>
       <v-list>
-        <v-list-item density="compact" href="#items">Items</v-list-item>
-        <v-list-item density="compact" href="#enchantments">Enchantments</v-list-item>
+        <v-list-item
+          density="compact"
+          href="#items"
+          min-height="10"
+        >Items</v-list-item>
+        <v-list-item
+          density="compact"
+          href="#enchantments"
+          min-height="10"
+        >Enchantments</v-list-item>
       </v-list>
     </v-navigation-drawer>
     <h3 id="items" class="section">Items</h3>

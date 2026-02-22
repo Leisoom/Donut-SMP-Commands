@@ -2,8 +2,13 @@
   <v-container>
     <v-navigation-drawer>
       <v-list>
-        <v-list-item class="font-weight-bold">Commands</v-list-item>
-        <v-list-item v-for="cmd in rawCommands" :key="cmd.command" density="compact" :href="'#' + cmd.command">
+        <v-list-item
+          v-for="cmd in rawCommands"
+          :key="cmd.command"
+          density="compact"
+          :href="'#' + cmd.command"
+          min-height="10"
+        >
           {{ cmd.command }}
         </v-list-item>
       </v-list>
