@@ -14,7 +14,7 @@
         v-for="cmd in cmds"
         :id="cmd.command"
         :key="cmd.command"
-        class="command-section"
+        class="section"
         :command="cmd"
       />
     </div>
@@ -44,6 +44,6 @@
 </script>
 
 <style lang="scss" scoped>
-.command-section {
+.section {
   scroll-margin-top: 80px;
 }</style>
