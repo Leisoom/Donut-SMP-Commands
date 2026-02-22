@@ -10,11 +10,11 @@
     <v-table id="items" density="compact">
       <thead>
         <tr>
-          <th class="text-left">
-            Short Hand
+          <th>
+            Shorthand
           </th>
-          <th class="text-left">
-            Items
+          <th>
+            Item(s)
           </th>
         </tr>
       </thead>
@@ -32,10 +32,10 @@
     <v-table density="compact">
       <thead>
         <tr>
-          <th class="text-left">
-            Short Hand
+          <th>
+            Shorthand
           </th>
-          <th class="text-left">
+          <th>
             Enchantment
           </th>
         </tr>
