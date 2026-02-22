@@ -118,7 +118,11 @@
   { "command": "tp", "description": "Send's telport request to specified player" },
   { "command": "tpa", "description": "Send's telport request to specified player" },
   { "command": "tpacancel", "description": "Cancel all current teleport requests" },
-  { "command": "tpaccept", "description": "If no argument is present, accepts latest TPA or TPHere request sent to the player. If argument is present, accepts TPA or TPHere request from specfied player" },
+  { "command": "tpaccept", "description": "If no argument is present, accepts latest TPA or TPHere request sent to the player. If argument is present, accepts TPA or TPHere request from specfied player", 
+  "examples": [
+    {"argument": "", "description": "Accepts latest TPA/TPHere request"},
+    {"argument": "W1zox_", "description": "Accepts TP request from user \"W1zox_\""}
+  ] },
   { "command": "tpdeny", "description": "Deny current incoming TP/TPHere request" },
   { "command": "tphere", "description": "Send's telport here request to specified player" },
   { "command": "unblock", "description": "Unblock specified player" },

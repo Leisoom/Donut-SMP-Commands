@@ -2,7 +2,11 @@
   <v-app>
     <v-app-bar density="compact" elevation="0">
       <v-app-bar-title class="text-secondary font-weight-bold cursor-pointer"><a class="text-decoration-none text-secondary" href="/">Donut Commands</a></v-app-bar-title>
-      <v-btn class="text-body-1" href="/auctionGuide">
+      <v-btn
+        class="text-body-1"
+        href="/auctionGuide"
+        :ripple="false"
+      >
         Auction Guide
       </v-btn>
     </v-app-bar>

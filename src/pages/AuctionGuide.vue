@@ -3,14 +3,18 @@
     <v-navigation-drawer>
       <v-list>
         <v-list-item
+          class="code text-body-2"
           density="compact"
           href="#items"
           min-height="10"
+          :ripple="false"
         >Items</v-list-item>
         <v-list-item
+          class="code text-body-2"
           density="compact"
           href="#enchantments"
           min-height="10"
+          :ripple="false"
         >Enchantments</v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -18,7 +22,7 @@
     <v-table id="items" density="compact">
       <thead>
         <tr>
-          <th style="width: 150px">
+          <th style="width: 190px">
             Argument
           </th>
           <th>
@@ -31,7 +35,7 @@
           v-for="item in auctionCommands"
           :key="item.argument"
         >
-          <td>{{ item.argument }}</td>
+          <td class="code">{{ item.argument }}</td>
           <td>{{ item.description }}</td>
         </tr>
       </tbody>
@@ -40,7 +44,7 @@
     <v-table density="compact">
       <thead>
         <tr>
-          <th style="width: 150px">
+          <th style="width: 190px">
             Argument
           </th>
           <th>
@@ -53,7 +57,7 @@
           v-for="item in enchantmentCommands"
           :key="item.argument"
         >
-          <td>{{ item.argument }}</td>
+          <td class="code">{{ item.argument }}</td>
           <td>{{ item.description }}</td>
         </tr>
       </tbody>

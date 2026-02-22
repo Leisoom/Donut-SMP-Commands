@@ -1,28 +1,27 @@
 <template>
-  <v-card class="my-2" density="compact" elevation="0">
+  <v-card class="mb-2" density="compact" elevation="0">
     <v-expansion-panels flat>
       <v-expansion-panel elevation="0">
         <v-expansion-panel-title v-if="hasExamples" static>
           <span>
-            <b class="text-secondary">/{{ command.command }}</b> - {{ command.description }}
+            <b class="text-secondary code mr-2">/{{ command.command }}</b>  {{ command.description }}
           </span>
         </v-expansion-panel-title>
         <div
           v-else
-          class="v-expansion-panel-title"
+          class="v-expansion-panel-title expansion"
         >
           <span>
-            <b class="text-secondary">/{{ command.command }}</b> - {{ command.description }}
+            <b class="text-secondary code mr-2">/{{ command.command }}</b>  {{ command.description }}
           </span>
         </div>
         <v-expansion-panel-text v-if="hasExamples">
-          <v-list-item
+          <p
             v-for="exp in command.examples"
             :key="exp.argument"
-            density="compact"
           >
-            /{{ command.command }} {{ exp.argument }} - {{ exp.description }}
-          </v-list-item>
+            <span class="code">/{{ command.command }} {{ exp.argument }}</span> - {{ exp.description }}
+          </p>
         </v-expansion-panel-text>
       </v-expansion-panel>
     </v-expansion-panels>

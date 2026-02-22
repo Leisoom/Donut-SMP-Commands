@@ -5,9 +5,11 @@
         <v-list-item
           v-for="cmd in rawCommands"
           :key="cmd.command"
+          class="code text-body-2"
           density="compact"
           :href="'#' + cmd.command"
           min-height="10"
+          :ripple="false"
         >
           {{ cmd.command }}
         </v-list-item>
