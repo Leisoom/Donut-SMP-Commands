@@ -10,7 +10,7 @@
     <v-table id="items" density="compact">
       <thead>
         <tr>
-          <th>
+          <th style="width: 150px">
             Shorthand
           </th>
           <th>
@@ -32,7 +32,7 @@
     <v-table density="compact">
       <thead>
         <tr>
-          <th>
+          <th style="width: 150px">
             Shorthand
           </th>
           <th>
