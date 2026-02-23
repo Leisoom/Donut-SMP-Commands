@@ -10,6 +10,7 @@
           :href="'#' + cmd.command"
           min-height="10"
           :ripple="false"
+          variant="plain"
         >
           {{ cmd.command }}
         </v-list-item>
@@ -21,7 +22,7 @@
         v-for="cmd in cmds"
         :id="cmd.command"
         :key="cmd.command"
-        class="section"
+        class="scroll-section"
         :command="cmd"
       />
     </div>
@@ -49,8 +50,3 @@
     }, {} as Record<string, Command[]>)
   })
 </script>
-
-<style lang="scss" scoped>
-.section {
-  scroll-margin-top: 80px;
-}</style>

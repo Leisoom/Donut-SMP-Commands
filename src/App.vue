@@ -1,11 +1,12 @@
 <template>
   <v-app>
     <v-app-bar density="compact" elevation="0">
-      <v-app-bar-title class="text-secondary font-weight-bold cursor-pointer"><a class="text-decoration-none text-secondary" href="/">Donut Commands</a></v-app-bar-title>
+      <v-app-bar-title><a class="text-decoration-none font-weight-bold text-secondary" href="/">Donut Commands</a></v-app-bar-title>
       <v-btn
         class="text-body-1"
         href="/auctionGuide"
         :ripple="false"
+        variant="plain"
       >
         Auction Guide
       </v-btn>

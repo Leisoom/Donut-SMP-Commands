@@ -8,6 +8,7 @@
           href="#items"
           min-height="10"
           :ripple="false"
+          variant="plain"
         >Items</v-list-item>
         <v-list-item
           class="code text-body-2"
@@ -15,10 +16,11 @@
           href="#enchantments"
           min-height="10"
           :ripple="false"
+          variant="plain"
         >Enchantments</v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <h3 id="items" class="section">Items</h3>
+    <h3 id="items" class="scroll-section">Items</h3>
     <v-table id="items" density="compact">
       <thead>
         <tr>
@@ -40,7 +42,7 @@
         </tr>
       </tbody>
     </v-table>
-    <h3 id="enchantments" class="mt-4 section">Enchantments</h3>
+    <h3 id="enchantments" class="mt-4 scroll-section">Enchantments</h3>
     <v-table density="compact">
       <thead>
         <tr>
@@ -73,8 +75,3 @@
   const auctionCommands = auctionShorthand as CommandExample[]
   const enchantmentCommands = enchantmentShorthand as CommandExample[]
 </script>
-
-<style lang="scss" scoped>
-.section {
-  scroll-margin-top: 80px;
-}</style>
