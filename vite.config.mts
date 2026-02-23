@@ -11,7 +11,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/Donut-SMP-Commands/'
+  base: '/Donut-SMP-Commands/',
   plugins: [
     VueRouter({
       dts: 'src/typed-router.d.ts',
