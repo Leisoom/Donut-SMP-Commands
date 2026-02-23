@@ -1,15 +1,15 @@
 <template>
   <v-app>
     <v-app-bar density="compact" elevation="0">
-      <v-app-bar-title><router-link class="text-decoration-none font-weight-bold text-secondary" to="/">Donut Commands</router-link></v-app-bar-title>
-      <router-link
+      <v-app-bar-title><a class="text-decoration-none font-weight-bold text-secondary" href="/">Donut Commands</a></v-app-bar-title>
+      <v-btn
         class="text-body-1"
+        href="/AuctionGuide"
         :ripple="false"
-        to="/AuctionGuide"
         variant="plain"
       >
         Auction Guide
-      </router-link>
+      </v-btn>
     </v-app-bar>
     <v-main>
       <router-view />
