@@ -4,8 +4,8 @@
       <v-app-bar-title><a class="text-decoration-none font-weight-bold text-secondary" href="/">Donut Commands</a></v-app-bar-title>
       <v-btn
         class="text-body-1"
-        href="/auctionGuide"
         :ripple="false"
+        to="/AuctionGuide"
         variant="plain"
       >
         Auction Guide
